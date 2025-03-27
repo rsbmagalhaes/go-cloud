@@ -6,8 +6,8 @@ FROM golang:1.24.1-alpine3.21
 WORKDIR /app
 
 COPY . .
-RUN yum update -y
-RUN yum upgrade -y
+#RUN yum update -y
+#RUN yum upgrade -y
 RUN go build -o main .
 
 EXPOSE 8080
